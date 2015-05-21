@@ -20,6 +20,6 @@ http.createServer(function (req, res) {
     });
     res.end(resp.toString());
  
-}).listen(1337);
+}).listen(process.env.PORT || 8888);
  
-console.log('Visit http://localhost:1337/ in your browser to see your TwiML document!');
+console.log('Visit http://localhost:8888/ in your browser to see your TwiML document!');
